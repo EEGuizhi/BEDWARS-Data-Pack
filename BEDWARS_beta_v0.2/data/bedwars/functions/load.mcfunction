@@ -43,7 +43,7 @@ function bedwars:display
 
 execute store result score Tmp Tmp run datapack list enabled
 tellraw @a [{"text":" [BED WARS] ","color":"gold"},{"text":" 資料包已成功載入！  (Made by Guizhi)","color":"white"}]
-execute if score Tmp Tmp matches 3.. run tellraw @a [{"text":"\n [BED WARS] ","color":"gold"},{"text":" 敬告，偵測到有其他正在運作的資料包，","color":"red"}]
-execute if score Tmp Tmp matches 3.. run tellraw @a [{"text":"            ","color":"gold"},{"text":" 這有可能會造成此資料包無法正常運作，","color":"red"}]
-execute if score Tmp Tmp matches 3.. run tellraw @a [{"text":"            ","color":"gold"},{"text":" 除非您確定這樣不會造成影響，否則不建議這麼做。","color":"red"}]
+execute if score Tmp Tmp matches 3.. run tellraw @a [{"text":"\n [BED WARS] ","color":"gold"},{"text":" 敬告，偵測到有其他正在運作的資料包，","bold":true,"color":"red"}]
+execute if score Tmp Tmp matches 3.. run tellraw @a [{"text":".               ","color":"gold"},{"text":" 這有可能會造成此資料包無法正常運作，","bold":true,"color":"red"}]
+execute if score Tmp Tmp matches 3.. run tellraw @a [{"text":".               ","color":"gold"},{"text":" 除非您確定這樣不會造成影響，否則不建議這麼做。","bold":true,"color":"red"}]
 execute as @a at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~

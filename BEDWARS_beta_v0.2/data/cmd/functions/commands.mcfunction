@@ -1,7 +1,7 @@
 #Guizhi
 
 tellraw @a {"text":"===================================================","color":"gold"}
-tellraw @a {"text":">> 設置點 (可直接點擊使用)："}
+tellraw @a {"text":">> 設置點 (可直接點擊文字使用)："}
 tellraw @a {"text":"   設置鑽石點："}
 tellraw @a {"text":"","extra":[{"text":"    /function bedwars:setpoint/diamond  ","color":"aqua","clickEvent":{"action":"run_command","value":"/function bedwars:setpoint/diamond"}}]}
 tellraw @a {"text":"   設置綠寶石點："}
