@@ -10,16 +10,19 @@ attribute @s generic.armor base set 0.0
 # Item shop 升級裝備
 execute store result score @s Tmp run clear @s chainmail_chestplate 1
 execute if score @s Tmp matches 1.. if score @s Armor matches 4.. run give @s iron_ingot 40
+execute if score @s Tmp matches 1.. if score @s Armor matches ..3 run playsound entity.experience_orb.pickup ambient @s ~ ~ ~
 execute if score @s Tmp matches 1.. if score @s Armor matches ..3 run scoreboard players operation @s Armor %= 4 num
 execute if score @s Tmp matches 1.. if score @s Armor matches ..3 run scoreboard players add @s Armor 4
 
 execute store result score @s Tmp run clear @s iron_chestplate{normal:1b} 1
 execute if score @s Tmp matches 1.. if score @s Armor matches 8.. run give @s gold_ingot 12
+execute if score @s Tmp matches 1.. if score @s Armor matches ..7 run playsound entity.experience_orb.pickup ambient @s ~ ~ ~
 execute if score @s Tmp matches 1.. if score @s Armor matches ..7 run scoreboard players operation @s Armor %= 4 num
 execute if score @s Tmp matches 1.. if score @s Armor matches ..7 run scoreboard players add @s Armor 8
 
 execute store result score @s Tmp run clear @s diamond_chestplate 1
 execute if score @s Tmp matches 1.. if score @s Armor matches 12.. run give @s emerald 6
+execute if score @s Tmp matches 1.. if score @s Armor matches ..11 run playsound entity.experience_orb.pickup ambient @s ~ ~ ~
 execute if score @s Tmp matches 1.. if score @s Armor matches ..11 run scoreboard players operation @s Armor %= 4 num
 execute if score @s Tmp matches 1.. if score @s Armor matches ..11 run scoreboard players add @s Armor 12
 
