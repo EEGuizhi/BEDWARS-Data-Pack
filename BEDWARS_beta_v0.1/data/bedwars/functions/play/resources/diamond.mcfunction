@@ -1,10 +1,7 @@
 #Guizhi
 
 # basic
-tp @s ~ ~ ~ ~2 ~
 scoreboard players remove @s num 1
-execute unless predicate bedwars:diamond_block run clear @a diamond_block
-execute unless predicate bedwars:diamond_block run item replace entity @s armor.head with diamond_block 1
 
 # display
 execute store result storage bedwars:second diamond int 0.05 run scoreboard players get @s num

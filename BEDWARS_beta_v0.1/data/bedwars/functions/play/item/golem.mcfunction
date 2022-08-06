@@ -11,4 +11,4 @@ execute as @s[team=green] run data modify entity @s AngryAt set from entity @p[g
 
 # 計算時間(60秒)
 scoreboard players add @s times 1
-execute if score @s times matches 2400.. run kill @s
+execute if score @s times matches 1800.. run kill @s

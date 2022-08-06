@@ -1,6 +1,5 @@
 #Guizhi
 
-playsound entity.dragon_fireball.explode ambient @a ~ ~ ~ 1.5
 summon creeper ~ -63 ~ {Fuse:0,Tags:["bedwars","tnt"]}
 tp @e[tag=tnt,limit=1] ~ ~ ~
 

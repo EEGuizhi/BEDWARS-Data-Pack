@@ -9,10 +9,10 @@ execute if score @s deathcount matches 1 run summon item ^ ^ ^0.2 {Item:{id:"min
 
 scoreboard players add @s times 1
 scoreboard players add @s deathcount 1
-execute if score @s num matches 2 run scoreboard players add @s times 1
-execute if score @s num matches 2 run scoreboard players add @s deathcount 1
-execute if score @s num matches 3 run scoreboard players add @s times 1
-execute if score @s num matches 3 run scoreboard players add @s deathcount 1
+execute if score @s num matches 1.. run scoreboard players add @s times 1
+execute if score @s num matches 1.. run scoreboard players add @s deathcount 1
+execute if score @s num matches 2.. run scoreboard players add @s times 1
+execute if score @s num matches 2.. run scoreboard players add @s deathcount 1
 
 execute if score @s times matches 40.. run scoreboard players reset @s times
-execute if score @s deathcount matches 210.. run scoreboard players reset @s deathcount
+execute if score @s deathcount matches 240.. run scoreboard players reset @s deathcount

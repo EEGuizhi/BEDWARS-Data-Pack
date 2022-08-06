@@ -6,6 +6,10 @@ tellraw @a {"text":"   設置鑽石點："}
 tellraw @a {"text":"","extra":[{"text":"    /function bedwars:setpoint/diamond  ","color":"aqua","clickEvent":{"action":"run_command","value":"/function bedwars:setpoint/diamond"}}]}
 tellraw @a {"text":"   設置綠寶石點："}
 tellraw @a {"text":"","extra":[{"text":"    /function bedwars:setpoint/emerald  ","color":"dark_green","clickEvent":{"action":"run_command","value":"/function bedwars:setpoint/emerald"}}]}
+tellraw @a {"text":"   移除最近的鑽石點："}
+tellraw @a {"text":"","extra":[{"text":"    /function bedwars:setpoint/remove_diamond  ","color":"red","clickEvent":{"action":"run_command","value":"/function bedwars:setpoint/remove_diamond"}}]}
+tellraw @a {"text":"   移除最近的綠寶石點："}
+tellraw @a {"text":"","extra":[{"text":"    /function bedwars:setpoint/remove_emerald  ","color":"red","clickEvent":{"action":"run_command","value":"/function bedwars:setpoint/remove_emerald"}}]}
 tellraw @a {"text":"   設置物品商人："}
 tellraw @a {"text":"","extra":[{"text":"    /function bedwars:setpoint/item_shop  ","color":"gold","clickEvent":{"action":"run_command","value":"/function bedwars:setpoint/item_shop"}}]}
 tellraw @a {"text":"   設置隊伍升級商人："}
@@ -21,7 +25,7 @@ tellraw @a {"text":">> 遊戲執行 (可直接點擊使用)："}
 tellraw @a {"text":"","extra":["    ",{"text":" [開始遊戲]  ","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run function cmd:start"}},{"text":"  [中斷遊戲]  ","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/function cmd:interrupt"}}]}
 tellraw @a {"text":""}
 tellraw @a {"text":">> 其他功能 (可直接點擊使用)："}
-tellraw @a {"text":"","extra":["    ",{"text":" [重置一切]  ","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run function cmd:reset"}},{"text":"  [隊伍分配]  ","color":"aqua","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run function cmd:team"}},{"text":"  [清除周圍方塊]  ","color":"green","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run scoreboard players set @s clear_block 1"}},{"text":"  [停止清除周圍方塊]  ","color":"dark_red","clickEvent":{"action":"run_command","value":"/scoreboard players reset @s clear_block"}}]}
+tellraw @a {"text":"","extra":["    ",{"text":" [重置一切設置]  ","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run function cmd:reset"}},{"text":"  [隊伍分配]  ","color":"aqua","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run function cmd:team"}},{"text":"  [清除周圍方塊]  ","color":"green","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run scoreboard players set @s clear_block 1"}},{"text":"  [停止清除周圍方塊]  ","color":"dark_red","clickEvent":{"action":"run_command","value":"/scoreboard players reset @s clear_block"}}]}
 tellraw @a {"text":"===================================================","color":"gold"}
 
-execute as @a at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~
+playsound entity.experience_orb.pickup ambient @s ~ ~ ~

@@ -22,6 +22,12 @@ team remove red
 team remove yellow
 team remove green
 team remove spec
+team remove display_blue_display
+team remove display_red_display
+team remove display_yellow_display
+team remove display_green_display
+team remove display_gold
+team remove display_gray
 
 # Settings
 function bedwars:load

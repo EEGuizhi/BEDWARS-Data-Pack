@@ -39,7 +39,7 @@ team modify blue prefix {"text":"[藍]","color":"blue"}
 team modify red prefix {"text":"[紅]","color":"red"}
 team modify yellow prefix {"text":"[黃]","color":"yellow"}
 team modify green prefix {"text":"[綠]","color":"green"}
-function bedwars:diplay
+function bedwars:display
 
 execute store result score Tmp Tmp run datapack list enabled
 tellraw @a [{"text":" [BED WARS] ","color":"gold"},{"text":" 資料包已成功載入！  (Made by Guizhi)","color":"white"}]

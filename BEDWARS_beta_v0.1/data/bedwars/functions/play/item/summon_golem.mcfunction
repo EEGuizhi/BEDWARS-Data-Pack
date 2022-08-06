@@ -6,6 +6,7 @@ execute if entity @p[scores={summon_golem=1..},team=blue] run team join blue @s
 execute if entity @p[scores={summon_golem=1..},team=red] run team join red @s
 execute if entity @p[scores={summon_golem=1..},team=yellow] run team join yellow @s
 execute if entity @p[scores={summon_golem=1..},team=green] run team join green @s
+data modify entity @s CustomNameVisible set value 1
 
 # 收尾
 scoreboard players reset @p[scores={summon_golem=1..}] summon_golem
