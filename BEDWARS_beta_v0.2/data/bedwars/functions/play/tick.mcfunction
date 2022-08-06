@@ -18,4 +18,4 @@ execute if entity @a[team=blue] run scoreboard players add playingteams num 1
 execute if entity @a[team=red] run scoreboard players add playingteams num 1
 execute if entity @a[team=yellow] run scoreboard players add playingteams num 1
 execute if entity @a[team=green] run scoreboard players add playingteams num 1
-# execute if score playingteams num matches 1 run function bedwars:play/win
+execute if score playingteams num matches 1 run function bedwars:play/win
