@@ -15,4 +15,4 @@ execute as @s[tag=redfish_marker] unless score @s num matches 1 run team join re
 execute as @s[tag=yellowfish_marker] unless score @s num matches 1 run team join yellow @e[type=silverfish,limit=1,sort=nearest]
 execute as @s[tag=greenfish_marker] unless score @s num matches 1 run team join green @e[type=silverfish,limit=1,sort=nearest]
 
-kill @s
+kill @s[type=marker]

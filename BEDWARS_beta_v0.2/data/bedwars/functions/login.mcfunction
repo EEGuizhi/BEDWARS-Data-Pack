@@ -1,6 +1,6 @@
 #Guizhi
 
-tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 歡迎遊玩 BED WARS ！","color":"white"}]
+tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 歡迎遊玩 BED WARS！  輸入 ","color":"white"},{"text":"/function cmd:commands","color":"yellow"},{"text":" 查看與使用指令","color":"white"}]
 
 # 正在進行遊戲
 execute if score playing num matches 1 run clear @s

@@ -10,5 +10,5 @@ data modify entity @s CustomName set from block ~ -64 ~ Text1
 setblock ~ -64 ~ minecraft:air
 
 # 55秒
-execute if score @s num matches ..1 run summon item ~ ~-2 ~ {Item:{id:"minecraft:emerald",Count:1},Tags:["bedwars","no_loop"]}
+execute if score @s num matches ..1 positioned ~ ~-2 ~ unless entity @e[nbt={Item:{id:"minecraft:emerald",Count:8b}}] run summon item ~ ~ ~ {Item:{id:"minecraft:emerald",Count:1},Tags:["bedwars","no_loop"]}
 execute if score @s num matches ..1 run scoreboard players set @s num 1101
