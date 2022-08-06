@@ -2,11 +2,11 @@
 
 # 鑽石
 execute as @s[tag=diamond] at @s run function bedwars:play/resources/diamond
-execute as @s[tag=diamond_block] at @s run function bedwars:play/resources/diamond_block
+execute as @s[tag=diamond_block] at @s run tp @s ~ ~ ~ ~2 ~
 
 # 綠寶石
 execute as @s[tag=emerald] at @s run function bedwars:play/resources/emerald
-execute as @s[tag=emerald_block] at @s run function bedwars:play/resources/emerald_block
+execute as @s[tag=emerald_block] at @s run tp @s ~ ~ ~ ~2 ~
 
 # 資源
 execute as @s[tag=resource] at @s run function bedwars:play/resources/home

@@ -26,14 +26,17 @@ scoreboard players set @e[tag=green_bed] num 0
 # Gamerules
 gamerule sendCommandFeedback false
 gamerule doMobSpawning false
+gamerule doMobLoot false
 gamerule keepInventory true
 gamerule spawnRadius 0
 gamerule naturalRegeneration true
 gamerule mobGriefing false
 gamerule announceAdvancements false
+gamerule doLimitedCrafting true
 difficulty normal
 
 # Players
+recipe take @a[team=!spec] *
 clear @a
 effect clear @a
 effect give @a[team=!spec] instant_health 1 99 true

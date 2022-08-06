@@ -2,7 +2,7 @@
 
 scoreboard players add tntloop num 1
 
-execute if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Fuse:60}
+execute if block ~ ~ ~ tnt run summon tnt ~ ~ ~ {Tags:["bedwars"],Fuse:60}
 execute if block ~ ~ ~ tnt run scoreboard players set tntloop num 2000
 execute if block ~ ~ ~ tnt run setblock ~ ~ ~ air
 
