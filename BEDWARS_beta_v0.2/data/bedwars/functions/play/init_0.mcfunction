@@ -23,6 +23,8 @@ scoreboard players set Made_by_Guizhi display 1
 team join display_gold Made_by_Guizhi
 team join display_gray .
 team join display_gray ..
+execute as @e[tag=resource] run data modify entity @s CustomNameVisible set value 0
+execute as @e[tag=spawn] run data modify entity @s CustomNameVisible set value 0
 
 # Endchest
 item replace entity @a[team=!spec] enderchest.0 with air
