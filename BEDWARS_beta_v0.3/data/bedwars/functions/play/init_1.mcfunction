@@ -6,6 +6,7 @@ scoreboard players set playing num 1
 # Scores
 scoreboard players set 20 num 20
 scoreboard players set 3 num 3
+scoreboard players set 4 num 4
 scoreboard players set slowtick num 0
 scoreboard players set @e[tag=resource] num 0
 

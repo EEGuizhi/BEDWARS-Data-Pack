@@ -6,7 +6,7 @@ scoreboard players add @s times 1
 scoreboard players add @s deathcount 1
 execute if score @s num matches 3.. run scoreboard players add @s give_emerald 1
 
-execute if score @s times matches 1 run summon item ^ ^ ^0.2 {Item:{id:"minecraft:iron_ingot",Count:1},Tags:["bedwars","no_loop"]}
+execute if score @s times matches 1 unless entity @e[nbt={Item:{id:"minecraft:iron_ingot",Count:64b}},distance=..5] run summon item ^ ^ ^0.2 {Item:{id:"minecraft:iron_ingot",Count:1},Tags:["bedwars","no_loop"]}
 execute if score @s deathcount matches 1 run summon item ^ ^ ^0.2 {Item:{id:"minecraft:gold_ingot",Count:1},Tags:["bedwars","no_loop"]}
 execute if score @s give_emerald matches 1 run summon item ^ ^ ^0.2 {Item:{id:"minecraft:emerald",Count:1},Tags:["bedwars","no_loop"]}
 
