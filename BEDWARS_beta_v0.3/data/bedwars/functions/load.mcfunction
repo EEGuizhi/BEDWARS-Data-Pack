@@ -20,6 +20,10 @@ scoreboard objectives add give_iron dummy
 scoreboard objectives add give_gold dummy
 scoreboard objectives add give_diamond dummy
 scoreboard objectives add give_emerald dummy
+scoreboard objectives add drop_iron dropped:iron_ingot
+scoreboard objectives add drop_gold dropped:gold_ingot
+scoreboard objectives add drop_diamond dropped:diamond
+scoreboard objectives add drop_emerald dropped:emerald
 scoreboard objectives add use_bow used:bow
 
 # Scores
