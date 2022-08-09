@@ -34,7 +34,7 @@ effect clear @a
 effect give @a[team=!spec] instant_health 1 99 true
 
 gamemode survival @a[team=!spec]
-execute as @a[team=!spec] run attribute @s generic.attack_speed base set 100
+execute as @a[team=!spec] run attribute @s generic.attack_speed base set 100.0
 execute as @a[team=!spec] run attribute @s generic.attack_damage base set 2.5
 tp @a[team=blue] @e[team=blue,tag=spawn,limit=1]
 tp @a[team=red] @e[team=red,tag=spawn,limit=1]
