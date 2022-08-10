@@ -7,14 +7,14 @@
 # 空的部分是為了方便未來增加其他陷阱功能
 
 # 歸還
-execute as @s[team=blue] if entity @e[tag=blue_bed,scores={num=2}] run give @s diamond 2
-execute as @s[team=blue] if entity @e[tag=blue_bed,scores={num=4}] run give @s diamond 2
-execute as @s[team=red] if entity @e[tag=red_bed,scores={num=2}] run give @s diamond 2
-execute as @s[team=red] if entity @e[tag=red_bed,scores={num=4}] run give @s diamond 2
-execute as @s[team=yellow] if entity @e[tag=yellow_bed,scores={num=2}] run give @s diamond 2
-execute as @s[team=yellow] if entity @e[tag=yellow_bed,scores={num=4}] run give @s diamond 2
-execute as @s[team=green] if entity @e[tag=green_bed,scores={num=2}] run give @s diamond 2
-execute as @s[team=green] if entity @e[tag=green_bed,scores={num=4}] run give @s diamond 2
+execute as @s[team=blue] if entity @e[tag=blue_bed,scores={num=2}] run give @s diamond{game:1b} 2
+execute as @s[team=blue] if entity @e[tag=blue_bed,scores={num=4}] run give @s diamond{game:1b} 2
+execute as @s[team=red] if entity @e[tag=red_bed,scores={num=2}] run give @s diamond{game:1b} 2
+execute as @s[team=red] if entity @e[tag=red_bed,scores={num=4}] run give @s diamond{game:1b} 2
+execute as @s[team=yellow] if entity @e[tag=yellow_bed,scores={num=2}] run give @s diamond{game:1b} 2
+execute as @s[team=yellow] if entity @e[tag=yellow_bed,scores={num=4}] run give @s diamond{game:1b} 2
+execute as @s[team=green] if entity @e[tag=green_bed,scores={num=2}] run give @s diamond{game:1b} 2
+execute as @s[team=green] if entity @e[tag=green_bed,scores={num=4}] run give @s diamond{game:1b} 2
 
 # 升級
 execute as @s[team=blue] as @e[tag=blue_bed,limit=1] unless score @s num matches 2 unless score @s num matches 4 run function bedwars:play/upgrade/trap_exe

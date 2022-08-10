@@ -1,6 +1,6 @@
 #Guizhi
 
-tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 歡迎遊玩 BED WARS！  輸入 ","color":"white"},{"text":"/function cmd:commands","color":"yellow"},{"text":" 查看與使用指令","color":"white"}]
+tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 歡迎遊玩 BED WARS！  輸入 ","color":"white"},{"text":"/function .cmd:commands","color":"yellow"},{"text":" 查看與使用指令","color":"white"}]
 
 execute store result score Tmp Tmp run datapack list enabled
 execute if score Tmp Tmp matches 3.. run tellraw @s [{"text":"\n [BED WARS] ","color":"gold"},{"text":" 敬告，偵測到有其他正在運作的資料包，","bold":true,"color":"red"}]

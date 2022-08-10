@@ -9,7 +9,7 @@ gamemode spectator @s[team=spec,gamemode=!spectator]
 
 # Died & Respawn
 execute store result score @s Tmp run data get entity @s Pos[1] 1
-execute if score @s Tmp matches ..-64 run kill @s[team=!spec]
+execute if score @s Tmp matches ..-63 run kill @s[team=!spec]
 execute if score @s deathcount matches 1.. run function bedwars:play/wait_respawn
 
 # Wools
@@ -42,9 +42,9 @@ execute if score @s give_diamond matches 1.. run function bedwars:play/give_item
 execute if score @s give_emerald matches 1.. run function bedwars:play/give_items/emerald
 
 # Others
-execute store success score @s Tmp run clear @s redstone_torch 1
+execute store success score @s Tmp run clear @s redstone_torch{game:1b} 1
 execute if score @s Tmp matches 1 run function bedwars:play/upgrade/alert
-execute store success score @s Tmp run clear @s tripwire_hook 1
+execute store success score @s Tmp run clear @s tripwire_hook{game:1b} 1
 execute if score @s Tmp matches 1 run function bedwars:play/upgrade/trap
 execute store success score @s Tmp run clear @s iron_chestplate{upgrade:1} 1
 execute if score @s Tmp matches 1 run function bedwars:play/upgrade/protect1

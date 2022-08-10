@@ -17,6 +17,7 @@ execute as @e[tag=resource] run data modify entity @s CustomNameVisible set valu
 execute as @e[tag=spawn] run data modify entity @s CustomNameVisible set value 1
 execute as @a run attribute @s generic.attack_speed base set 4.0
 execute as @a run attribute @s generic.attack_damage base set 1.0
+execute as @a run attribute @s generic.armor base set 0.0
 
 tag @a remove plyr_01
 tag @a remove plyr_02

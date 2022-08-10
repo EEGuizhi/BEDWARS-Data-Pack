@@ -1,6 +1,6 @@
 #Guizhi
 
-execute as @s[team=blue] unless score blue_protect num matches 2 run give @s diamond 20
+execute as @s[team=blue] unless score blue_protect num matches 2 run give @s diamond{game:1b} 20
 execute as @s[team=blue] unless score blue_protect num matches 2.. run tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 請先升級裝備強化II哦！","color":"red"}]
 execute as @s[team=blue] if score blue_protect num matches 3.. run tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 已經升級過裝備強化III哦！","color":"red"}]
 execute as @s[team=blue] if score blue_protect num matches 2 run tellraw @a[team=blue] [{"text":" [BED WARS] ","color":"gold"},{"text":" 隊伍獲得了裝備強化III！","color":"aqua"}]
@@ -8,7 +8,7 @@ execute as @s[team=blue] if score blue_protect num matches 2 as @a[team=blue] at
 execute as @s[team=blue] if score blue_protect num matches 2 run scoreboard players add @a[team=blue] Armor 1
 execute as @s[team=blue] if score blue_protect num matches 2 run scoreboard players set blue_protect num 3
 
-execute as @s[team=red] unless score red_protect num matches 2 run give @s diamond 20
+execute as @s[team=red] unless score red_protect num matches 2 run give @s diamond{game:1b} 20
 execute as @s[team=red] unless score red_protect num matches 2.. run tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 請先升級裝備強化II哦！","color":"red"}]
 execute as @s[team=red] if score red_protect num matches 3.. run tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 已經升級過裝備強化III哦！","color":"red"}]
 execute as @s[team=red] if score red_protect num matches 2 run tellraw @a[team=red] [{"text":" [BED WARS] ","color":"gold"},{"text":" 隊伍獲得了裝備強化III！","color":"aqua"}]
@@ -16,7 +16,7 @@ execute as @s[team=red] if score red_protect num matches 2 as @a[team=red] at @s
 execute as @s[team=red] if score red_protect num matches 2 run scoreboard players add @a[team=red] Armor 1
 execute as @s[team=red] if score red_protect num matches 2 run scoreboard players set red_protect num 3
 
-execute as @s[team=yellow] unless score yellow_protect num matches 2 run give @s diamond 20
+execute as @s[team=yellow] unless score yellow_protect num matches 2 run give @s diamond{game:1b} 20
 execute as @s[team=yellow] unless score yellow_protect num matches 2.. run tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 請先升級裝備強化II哦！","color":"red"}]
 execute as @s[team=yellow] if score yellow_protect num matches 3.. run tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 已經升級過裝備強化III哦！","color":"red"}]
 execute as @s[team=yellow] if score yellow_protect num matches 2 run tellraw @a[team=yellow] [{"text":" [BED WARS] ","color":"gold"},{"text":" 隊伍獲得了裝備強化III！","color":"aqua"}]
@@ -24,7 +24,7 @@ execute as @s[team=yellow] if score yellow_protect num matches 2 as @a[team=yell
 execute as @s[team=yellow] if score yellow_protect num matches 2 run scoreboard players add @a[team=yellow] Armor 1
 execute as @s[team=yellow] if score yellow_protect num matches 2 run scoreboard players set yellow_protect num 3
 
-execute as @s[team=green] unless score green_protect num matches 2 run give @s diamond 20
+execute as @s[team=green] unless score green_protect num matches 2 run give @s diamond{game:1b} 20
 execute as @s[team=green] unless score green_protect num matches 2.. run tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 請先升級裝備強化II哦！","color":"red"}]
 execute as @s[team=green] if score green_protect num matches 3.. run tellraw @s [{"text":" [BED WARS] ","color":"gold"},{"text":" 已經升級過裝備強化III哦！","color":"red"}]
 execute as @s[team=green] if score green_protect num matches 2 run tellraw @a[team=green] [{"text":" [BED WARS] ","color":"gold"},{"text":" 隊伍獲得了裝備強化III！","color":"aqua"}]

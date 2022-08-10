@@ -9,5 +9,9 @@ execute at @e[team=red,tag=spawn,limit=1] run spawnpoint @a[team=red] ~ ~ ~
 execute at @e[team=yellow,tag=spawn,limit=1] run spawnpoint @a[team=yellow] ~ ~ ~
 execute at @e[team=green,tag=spawn,limit=1] run spawnpoint @a[team=green] ~ ~ ~
 
-# 藥水
-clear @a glass_bottle
+# 屬性
+execute if score attack_speed num matches 0 as @a run attribute @s generic.attack_speed base set 100.0
+execute as @a run attribute @s generic.attack_damage base set 2.5
+
+# Next
+schedule function bedwars:play/game_check3 1t

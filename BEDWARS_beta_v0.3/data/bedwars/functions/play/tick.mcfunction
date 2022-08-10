@@ -6,7 +6,7 @@ execute as @e[type=!player,type=!marker,tag=!no_loop] run function bedwars:play/
 
 # Slow tick
 scoreboard players add slowtick num 1
-execute if score slowtick num matches 20.. run function bedwars:play/game_check
+execute if score slowtick num matches 20.. run function bedwars:play/game_check1
 
 # Effect (慢速回血)
 scoreboard players add saturation num 1
