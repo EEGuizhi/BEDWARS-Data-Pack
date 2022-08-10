@@ -1,7 +1,7 @@
 #Guizhi
 
 gamemode survival @s
-attribute @s generic.attack_speed base set 100.0
+execute if score attack_speed num matches 0 run attribute @s generic.attack_speed base set 100.0
 attribute @s generic.attack_damage base set 2.5
 give @s wooden_sword{Unbreakable:1b,unsharp:1b} 1
 

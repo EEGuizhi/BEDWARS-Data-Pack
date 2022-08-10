@@ -28,7 +28,11 @@ scoreboard objectives add use_bow used:bow
 
 # Scores
 scoreboard players reset bedloop
+scoreboard players set 20 num 20
+scoreboard players set 3 num 3
+scoreboard players set 4 num 4
 scoreboard players set -1 num -1
+execute unless score attack_speed num matches 0..1 run scoreboard players set attack_speed num 0
 
 # Teams
 team add blue {"text":"藍隊","color":"blue"}

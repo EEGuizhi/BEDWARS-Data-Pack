@@ -7,6 +7,7 @@ scoreboard players set playing num 1
 scoreboard players set 20 num 20
 scoreboard players set 3 num 3
 scoreboard players set 4 num 4
+scoreboard players set -1 num -1
 scoreboard players set slowtick num 0
 scoreboard players set @e[tag=resource] num 0
 
@@ -35,7 +36,7 @@ effect clear @a
 effect give @a[team=!spec] instant_health 1 99 true
 
 gamemode survival @a[team=!spec]
-execute as @a[team=!spec] run attribute @s generic.attack_speed base set 100.0
+execute if score attack_speed num matches 0 as @a[team=!spec] run attribute @s generic.attack_speed base set 100.0
 execute as @a[team=!spec] run attribute @s generic.attack_damage base set 2.5
 tp @a[team=blue] @e[team=blue,tag=spawn,limit=1]
 tp @a[team=red] @e[team=red,tag=spawn,limit=1]
