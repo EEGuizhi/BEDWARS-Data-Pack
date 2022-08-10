@@ -19,4 +19,4 @@ execute if score plyr_num num matches 15 run tag @s add plyr_15
 execute if score plyr_num num matches 16 run tag @s add plyr_16
 
 scoreboard players add plyr_num num 1
-execute unless score plyr_num num matches 17.. as @p[team=!spec,tag=!get_num] run function bedwars:play/init_plyrnum
+execute unless score plyr_num num matches 17.. as @p[team=!spec,tag=!get_num] run function bedwars:play/init/plyrnum

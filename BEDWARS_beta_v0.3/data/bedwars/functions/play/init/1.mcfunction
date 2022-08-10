@@ -27,7 +27,7 @@ scoreboard players set @e[tag=green_bed] num 0
 
 # Players
 scoreboard players set plyr_num num 1
-execute as @p[team=!spec] run function bedwars:play/init_plyrnum
+execute as @p[team=!spec] run function bedwars:play/init/plyrnum
 tag @a remove get_num
 
 recipe take @a[team=!spec] *
