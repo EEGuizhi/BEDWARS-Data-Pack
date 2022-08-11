@@ -20,7 +20,7 @@ execute as @s[type=villager] at @s facing entity @p[gamemode=survival,distance=.
 execute as @s[type=experience_orb] run kill @s
 execute as @s[type=egg] at @s run function bedwars:play/item/egg
 execute as @s[type=item,tag=!bedwars] run function bedwars:play/item/drop_item
-execute as @s[type=fireball] at @s run function bedwars:play/item/fireball_loop
+execute as @s[type=fireball] at @s run function bedwars:play/item/fireball/loop
 execute as @s[type=snowball] at @s run function bedwars:play/item/snowball
 execute as @s[type=silverfish] run function bedwars:play/item/silverfish_loop
 execute as @s[type=iron_golem] at @s run function bedwars:play/item/golem

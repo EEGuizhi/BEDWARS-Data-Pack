@@ -3,6 +3,7 @@
 kill @s[nbt={Item:{id:"minecraft:fire_charge"}}]
 
 data modify entity @s[nbt={Item:{id:"minecraft:wooden_sword"}}] PickupDelay set value 0
+kill @s[nbt={Item:{id:"minecraft:carrot_on_a_stick"}}]
 kill @s[nbt={Item:{id:"minecraft:glass_bottle"}}]
 kill @s[nbt={Item:{id:"minecraft:leather_helmet"}}]
 kill @s[nbt={Item:{id:"minecraft:leather_chestplate"}}]

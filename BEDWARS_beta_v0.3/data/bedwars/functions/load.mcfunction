@@ -8,7 +8,8 @@ scoreboard objectives add leftgame custom:leave_game
 
 scoreboard objectives add deathcount deathCount
 scoreboard objectives add summon_golem used:wolf_spawn_egg
-scoreboard objectives add drop_fireball dropped:fire_charge
+scoreboard objectives add fireball_count dummy
+scoreboard objectives add use_fireball used:carrot_on_a_stick
 scoreboard objectives add use_snowball used:snowball
 scoreboard objectives add use_egg used:egg
 scoreboard objectives add Armor dummy

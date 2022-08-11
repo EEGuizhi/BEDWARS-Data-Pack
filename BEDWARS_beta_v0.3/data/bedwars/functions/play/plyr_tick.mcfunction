@@ -28,8 +28,9 @@ execute as @s[gamemode=survival,predicate=bedwars:invisible] run function bedwar
 execute as @s[team=!spec,gamemode=survival,predicate=!bedwars:invisible] run function bedwars:play/armors/main
 
 # Fireball
-execute if score @s[team=!spec] drop_fireball matches 1.. unless predicate bedwars:sneaking positioned ~ ~1.625 ~ positioned ^ ^ ^0.5 run function bedwars:play/item/fireball
-execute if score @s[team=!spec] drop_fireball matches 1.. if predicate bedwars:sneaking positioned ~ ~1.25 ~ positioned ^ ^ ^0.5 run function bedwars:play/item/fireball
+execute as @s[team=!spec,nbt={SelectedItem:{id:"minecraft:fire_charge"}}] run function bedwars:play/item/fireball/prepare
+execute as @s[team=!spec,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{fireball:1b}}}] run function bedwars:play/item/fireball/use
+execute as @s[scores={fireball_count=1..},nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{fireball:1b}}}] run function bedwars:play/item/fireball/un_use
 
 # 蠹魚
 execute if score @s[team=!spec] use_snowball matches 1.. positioned ~ ~1.625 ~ run function bedwars:play/item/use_snowball

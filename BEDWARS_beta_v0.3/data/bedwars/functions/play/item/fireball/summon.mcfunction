@@ -1,5 +1,6 @@
 #Guizhi
 
+scoreboard players remove @s fireball_count 1
 execute as @s[tag=plyr_01] run summon fireball ~ ~ ~ {Tags:["bedwars","plyr_01"]}
 execute as @s[tag=plyr_02] run summon fireball ~ ~ ~ {Tags:["bedwars","plyr_02"]}
 execute as @s[tag=plyr_03] run summon fireball ~ ~ ~ {Tags:["bedwars","plyr_03"]}
@@ -16,7 +17,7 @@ execute as @s[tag=plyr_13] run summon fireball ~ ~ ~ {Tags:["bedwars","plyr_13"]
 execute as @s[tag=plyr_14] run summon fireball ~ ~ ~ {Tags:["bedwars","plyr_14"]}
 execute as @s[tag=plyr_15] run summon fireball ~ ~ ~ {Tags:["bedwars","plyr_15"]}
 execute as @s[tag=plyr_16] run summon fireball ~ ~ ~ {Tags:["bedwars","plyr_16"]}
-execute as @e[type=fireball,limit=1,sort=nearest] run function bedwars:play/item/fireball_motion
+execute as @e[type=fireball,limit=1,sort=nearest] run function bedwars:play/item/fireball/motion
 
 playsound item.firecharge.use ambient @a ~ ~ ~
 scoreboard players reset @s drop_fireball
