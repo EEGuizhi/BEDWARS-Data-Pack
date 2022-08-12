@@ -25,6 +25,11 @@ scoreboard players set @e[tag=blue_bed] num 0
 scoreboard players set @e[tag=yellow_bed] num 0
 scoreboard players set @e[tag=green_bed] num 0
 
+scoreboard players set Generator_Tier num 0
+scoreboard players set diamond_generate num 901
+scoreboard players set emerald_generate num 1201
+schedule function bedwars:play/resources/generator_tiers 300s
+
 # Players
 scoreboard players set plyr_num num 1
 execute as @p[team=!spec] run function bedwars:play/init/plyrnum
