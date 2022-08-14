@@ -12,9 +12,13 @@ execute store result score @s Tmp run data get entity @s Pos[1] 1
 execute if score @s Tmp matches ..-63 run kill @s[team=!spec]
 execute if score @s deathcount matches 1.. run function bedwars:play/wait_respawn
 
-# Wools
+# 羊毛 & 陶土 & 玻璃
 execute store result score @s[team=!spec] Tmp run clear @s white_wool 0
-execute if score @s[team=!spec] Tmp matches 1.. run function bedwars:play/item/give_wool
+execute if score @s[team=!spec] Tmp matches 1.. run function bedwars:play/give_items/wool
+execute store result score @s[team=!spec] Tmp run clear @s terracotta 0
+execute if score @s[team=!spec] Tmp matches 1.. run function bedwars:play/give_items/terracotta
+execute store result score @s[team=!spec] Tmp run clear @s white_stained_glass 0
+execute if score @s[team=!spec] Tmp matches 1.. run function bedwars:play/give_items/glass
 
 # Weapons
 execute as @s[scores={use_bow=1..}] positioned ~ ~1.5 ~ run function bedwars:play/arrow_tag
