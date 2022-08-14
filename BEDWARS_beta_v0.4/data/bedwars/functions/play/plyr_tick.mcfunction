@@ -1,11 +1,11 @@
 #Guizhi
 
 # Teams
-team join spec @s[team=!blue,team=!red,team=!yellow,team=!green,team=!spec,tag=!op]
+team join spec @s[team=!blue,team=!red,team=!yellow,team=!green,team=!spec]
 
 # Gamemode Settings
-execute as @s[team=!spec,gamemode=!survival] unless score @s deathcount matches 1.. run gamemode survival @s
-gamemode spectator @s[team=spec,gamemode=!spectator]
+execute as @s[team=!spec,gamemode=!survival,tag=!op] unless score @s deathcount matches 1.. run gamemode survival @s
+gamemode spectator @s[team=spec,gamemode=!spectator,tag=!op]
 
 # Died & Respawn
 execute store result score @s Tmp run data get entity @s Pos[1] 1
