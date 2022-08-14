@@ -1,8 +1,16 @@
 #Guizhi
 
-kill @s[nbt={Item:{id:"minecraft:fire_charge"}}]
-
 data modify entity @s[nbt={Item:{id:"minecraft:wooden_sword"}}] PickupDelay set value 0
+data merge entity @s[nbt={Item:{id:"minecraft:blue_wool"}}] {Item:{tag:{game:1b}}}
+data merge entity @s[nbt={Item:{id:"minecraft:red_wool"}}] {Item:{tag:{game:1b}}}
+data merge entity @s[nbt={Item:{id:"minecraft:yellow_wool"}}] {Item:{tag:{game:1b}}}
+data merge entity @s[nbt={Item:{id:"minecraft:green_wool"}}] {Item:{tag:{game:1b}}}
+data merge entity @s[nbt={Item:{id:"minecraft:blue_terracotta"}}] {Item:{tag:{game:1b}}}
+data merge entity @s[nbt={Item:{id:"minecraft:red_terracotta"}}] {Item:{tag:{game:1b}}}
+data merge entity @s[nbt={Item:{id:"minecraft:yellow_terracotta"}}] {Item:{tag:{game:1b}}}
+data merge entity @s[nbt={Item:{id:"minecraft:green_terracotta"}}] {Item:{tag:{game:1b}}}
+data merge entity @s[nbt={Item:{id:"minecraft:end_stone"}}] {Item:{tag:{game:1b}}}
+data merge entity @s[nbt={Item:{id:"minecraft:oak_planks"}}] {Item:{tag:{game:1b}}}
 kill @s[nbt={Item:{id:"minecraft:carrot_on_a_stick"}}]
 kill @s[nbt={Item:{id:"minecraft:glass_bottle"}}]
 kill @s[nbt={Item:{id:"minecraft:leather_helmet"}}]
