@@ -20,3 +20,13 @@ scoreboard players set @s[tag=blue_bed,scores={num=2}] num 4
 scoreboard players set @s[tag=red_bed,scores={num=2}] num 4
 scoreboard players set @s[tag=yellow_bed,scores={num=2}] num 4
 scoreboard players set @s[tag=green_bed,scores={num=2}] num 4
+
+scoreboard players set @s[tag=blue_bed,scores={num=3}] num 5
+scoreboard players set @s[tag=red_bed,scores={num=3}] num 5
+scoreboard players set @s[tag=yellow_bed,scores={num=3}] num 5
+scoreboard players set @s[tag=green_bed,scores={num=3}] num 5
+
+scoreboard players set @s[tag=blue_bed,scores={num=6}] num 7
+scoreboard players set @s[tag=red_bed,scores={num=6}] num 7
+scoreboard players set @s[tag=yellow_bed,scores={num=6}] num 7
+scoreboard players set @s[tag=green_bed,scores={num=6}] num 7

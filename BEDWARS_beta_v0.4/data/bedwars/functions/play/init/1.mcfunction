@@ -42,6 +42,7 @@ effect give @a[team=!spec] instant_health 1 99 true
 
 gamemode survival @a[team=!spec]
 execute if score attack_speed num matches 0 as @a[team=!spec] run attribute @s generic.attack_speed base set 100.0
+execute if score attack_speed num matches 1 as @a[team=!spec] run attribute @s generic.attack_speed base set 4.0
 execute as @a[team=!spec] run attribute @s generic.attack_damage base set 2.5
 execute as @a run attribute @s generic.armor base set 0.0
 tp @a[team=blue] @e[team=blue,tag=spawn,limit=1]

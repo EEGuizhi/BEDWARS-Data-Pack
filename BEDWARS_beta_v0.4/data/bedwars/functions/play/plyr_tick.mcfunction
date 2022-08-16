@@ -51,6 +51,8 @@ execute store success score @s Tmp run clear @s redstone_torch{game:1b} 1
 execute if score @s Tmp matches 1 run function bedwars:play/upgrade/alert
 execute store success score @s Tmp run clear @s tripwire_hook{game:1b} 1
 execute if score @s Tmp matches 1 run function bedwars:play/upgrade/trap
+execute store success score @s Tmp run clear @s iron_pickaxe{dig_slow:1b,game:1b} 1
+execute if score @s Tmp matches 1 run function bedwars:play/upgrade/dig_slow
 execute store success score @s Tmp run clear @s iron_chestplate{upgrade:1} 1
 execute if score @s Tmp matches 1 run function bedwars:play/upgrade/protect1
 execute store success score @s Tmp run clear @s iron_chestplate{upgrade:2} 1
