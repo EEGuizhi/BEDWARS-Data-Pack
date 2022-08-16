@@ -2,6 +2,7 @@
 
 execute if score @s[scores={KillByPlyr=1..}] deathcount matches 1 run function bedwars:play/transfer_items
 execute if score @s deathcount matches 1 run clear @s
+execute if score @s deathcount matches 1 run scoreboard players reset @s fireball_count
 execute if score @s deathcount matches 1.. run gamemode spectator @s
 execute if score @s deathcount matches 2 run title @s title {"text":"你死亡了！","color":"red","bold":true}
 execute if score @s deathcount matches 2 run playsound entity.lightning_bolt.thunder ambient @s ~ ~ ~

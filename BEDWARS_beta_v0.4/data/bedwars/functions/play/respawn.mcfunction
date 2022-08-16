@@ -1,5 +1,6 @@
 #Guizhi
 
+effect clear @s
 gamemode survival @s
 execute if score attack_speed num matches 0 run attribute @s generic.attack_speed base set 100.0
 attribute @s generic.attack_damage base set 2.5

@@ -17,6 +17,7 @@ execute as @s[tag=bed] at @s run function bedwars:play/beds
 # 其他
 execute as @s[type=tnt] run function bedwars:play/item/tnt/main
 execute as @s[type=villager] at @s facing entity @p[gamemode=survival,distance=..5] feet run tp @s ~ ~ ~ ~ ~
+execute as @s[type=arrow,nbt={inGround:1b}] run kill @s
 execute as @s[type=experience_orb] run kill @s
 execute as @s[type=egg] at @s run function bedwars:play/item/egg
 execute as @s[type=item,tag=!bedwars] run function bedwars:play/item/drop_item
